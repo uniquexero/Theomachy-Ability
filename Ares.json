@@ -1,0 +1,163 @@
+{
+  "displayName": "아레스",
+  "type": "WARRIOR",
+  "iconId": 403,
+  "iconData": 0,
+  "mana": 100,
+  "manaRegen": 0.0,
+  "manaColor": 14548753,
+  "manaName": "&6분노",
+  "attackBonus": "STRENGTH",
+  "information": [],
+  "description": [
+    "검을 이용하여 근접 피해를 입히는 능력입니다."
+  ],
+  "skill": {
+    "swordsmanship": {
+      "displayName": "검술",
+      "type": "CAST",
+      "iconId": 276,
+      "iconData": 0,
+      "cooldown": 10,
+      "damageCoefficient": "0.7ATK",
+      "criticalStrkeDealDamage": 2.0,
+      "manaRegenPerAttack": 10,
+      "manaRegenPerAttackCritical": 15,
+      "description": [
+        "이 스킬로 적을 공격시 [damageCoefficient]의 피해를 입히고",
+        "[../../manaName]&r를 [manaRegenPerAttack] 회복합니다.",
+        "치명타 시 FORMAT([criticalStrkeDealDamage], #%)의 피해를 입히고",
+        "[../../manaName]&r를 [manaRegenPerAttackCritical] 회복합니다."
+      ]
+    },
+    "rage": {
+      "displayName": "격노",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 10,
+      "cost": 50,
+      "cooldown": 200,
+      "castTime": 10,
+      "castColor": 65535,
+      "rageDuration": 100,
+      "criticalRateBonus": 50,
+      "description": [
+        "FORMAT(EVAL([rageDuration] / 20))초간 치명타 확률이 &b[criticalRateBonus]% &r추가됩니다."
+      ]
+    },
+    "criticalBlow": {
+      "displayName": "치명적 일격",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 20,
+      "cooldown": 60,
+      "manaPerAttack": 20,
+      "bonusDamageCoefficient": "0.5DEF",
+      "stunDuration": 10,
+      "description": [
+        "활성화 시 &c[../swordsmanship/displayName]&r이 [../../manaName]&r를 [manaPerAttack] 소모하여",
+        "대상에게 [bonusDamageCoefficient]의 추가 피해를 입히고",
+        "FORMAT(EVAL([stunDuration] / 20))초간 기절시킵니다."
+      ]
+    },
+    "rush": {
+      "displayName": "돌진",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 40,
+      "cost": 45,
+      "cooldown": 200,
+      "castTime": 20,
+      "castColor": 65535,
+      "speedDuration": 100,
+      "speedBonus": 100,
+      "description": [
+        "FORMAT(EVAL([speedDuration] / 20))초간 이동속도가 &2[speedBonus] &r증가합니다."
+      ]
+    },
+    "endure": {
+      "displayName": "인내",
+      "type": "PASSIVE",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 60,
+      "cooldown": 60,
+      "description": [
+        "활성화시 넉백을 당하지 않습니다."
+      ]
+    },
+    "sweepingStrike": {
+      "displayName": "휩쓸기",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 90,
+      "cost": 60,
+      "cooldown": 240,
+      "castTime": 10,
+      "castColor": 65535,
+      "radius": 3.0,
+      "rampageDuration": 100,
+      "description": [
+        "FORMAT(EVAL([rampageDuration] / 20))초간 &c[../swordsmanship/displayName]&r이 전방에 있는 모든",
+        "적을 가격합니다."
+      ]
+    },
+    "flash": {
+      "displayName": "섬광",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 120,
+      "cost": 30,
+      "cooldown": 300,
+      "castTime": 20,
+      "castColor": 65535,
+      "range": 12.0,
+      "damageCoefficient": "0.05HP",
+      "stunDuration": 10,
+      "description": [
+        "지정한 적에게 돌진하여 [damageCoefficient]의 피해를",
+        "입히고 FORMAT(EVAL([stunDuration] / 20))초간 기절시킵니다."
+      ]
+    },
+    "berserk": {
+      "displayName": "버서크",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 160,
+      "cooldown": 300,
+      "castTime": 10,
+      "castColor": 65535,
+      "regenMana": 40,
+      "description": [
+        "[../../manaName]&r를 [regenMana] 회복합니다."
+      ]
+    },
+    "smite": {
+      "displayName": "강타",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 200,
+      "cost": 30,
+      "cooldown": 400,
+      "castTime": 10,
+      "castColor": 65535,
+      "damageCoefficient": "2.5ATK",
+      "damageByMissingHealth": 0.75,
+      "smiteDuration": 100,
+      "description": [
+        "시전시 강타 효과를 얻습니다.",
+        "효과 지속시간 내에 &c[../swordsmanship/displayName]&r을 사용해 적을 ",
+        "공격시 효과가 사라지며 [../../manaName]&r를 모두 소모하여 ",
+        "[damageCoefficient] + 플레이어일 경우 대상 잃은",
+        "체력의 FORMAT([damageByMissingHealth], #%)의 피해를 입힙니다."
+      ]
+    }
+  }
+}

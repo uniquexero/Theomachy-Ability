@@ -1,0 +1,171 @@
+{
+  "displayName": "이시스",
+  "type": "SUPPORT",
+  "iconId": 403,
+  "iconData": 0,
+  "mana": 100,
+  "manaRegen": 0.25,
+  "manaColor": 65535,
+  "manaName": "&b마나",
+  "attackBonus": "INTELLIGENCE",
+  "information": [],
+  "description": [],
+  "skill": {
+    "spellOfBinding": {
+      "displayName": "속박의 주문",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "cost": 15,
+      "cooldown": 30,
+      "range": 16.0,
+      "damageCoefficient": "1ATK",
+      "entangleDuration": 40,
+      "resistanceDuration": 140,
+      "description": [
+        "지정한 대상에게 [damageCoefficient]의 피해를 입히고",
+        "FORMAT(EVAL([entangleDuration] / 20))초간 구속시킵니다.",
+        "대상이 플레이어일 경우 FORMAT(EVAL([resistanceDuration] / 20))초에 한번만 구속이",
+        "적용됩니다."
+      ]
+    },
+    "heal": {
+      "displayName": "치유",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 10,
+      "cost": 15,
+      "cooldown": 40,
+      "castTime": 60,
+      "channeling": true,
+      "castColor": 65535,
+      "healCoefficient": "1INT",
+      "radius": 8,
+      "description": [
+        "자신과 주위 아군들의 체력을 [healCoefficient] 회복시킵니다."
+      ]
+    },
+    "united": {
+      "displayName": "연합",
+      "type": "PASSIVE",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 20,
+      "damageRate": 0.2,
+      "unitedDuration": 400,
+      "description": [
+        "자신으로부터 이로운 효과를 받은 아군에게",
+        "FORMAT(EVAL([unitedDuration] / 20))초간 연합 효과를 부여합니다.",
+        "효과가 지속되는 동안 아군이 적에게 입히는 피해량의",
+        "FORMAT([damageRate], #%)의 추가 피해를 입힙니다."
+      ]
+    },
+    "blink": {
+      "displayName": "블링크",
+      "type": "MOVEMENT",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 40,
+      "cost": 10,
+      "cooldown": 160,
+      "castTime": 10,
+      "channeling": true,
+      "castColor": 65535,
+      "range": 16.0,
+      "highVertical": 5,
+      "lowVertical": 10,
+      "description": [
+        "앞으로 순간이동합니다."
+      ]
+    },
+    "timeslip": {
+      "displayName": "어긋난 시간",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 60,
+      "cost": 10,
+      "cooldown": 300,
+      "castTime": 10,
+      "castColor": 65535,
+      "reduceCastTime": 0.5,
+      "timeslipDuration": 140,
+      "description": [
+        "FORMAT(EVAL([timeslipDuration] / 20))초간 모든 스킬들의 시전시간이",
+        "FORMAT(EVAL([reduceCastTime] / 20), #%) 감소합니다."
+      ]
+    },
+    "cheering": {
+      "displayName": "치어링",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 90,
+      "cost": 35,
+      "cooldown": 600,
+      "castTime": 60,
+      "castColor": 65535,
+      "attackBonusCoefficient": "0.1INT",
+      "cheeringDuration": 600,
+      "radius": 8,
+      "projectileVelocity": 1.0,
+      "description": [
+        "자신과 주위 아군들의 공격력을 FORMAT(EVAL([cheeringDuration] / 20))초간",
+        "[attackBonusCoefficient] 상승시킵니다."
+      ]
+    },
+    "stun": {
+      "displayName": "스턴",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 120,
+      "cost": 30,
+      "cooldown": 300,
+      "castTime": 20,
+      "castColor": 65535,
+      "range": 16.0,
+      "damageCoefficient": "0.6ATK",
+      "stunDuration": 40,
+      "description": [
+        "지정한 대상에게 [damageCoefficient]의 피해를 입히고",
+        "FORMAT(EVAL([stunDuration] / 20))초간 기절시킵니다."
+      ]
+    },
+    "sacrifice": {
+      "displayName": "희생",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 160,
+      "cooldown": 100,
+      "castTime": 40,
+      "castColor": 65535,
+      "consumeHealthRate": 0.2,
+      "manaRegen": 50,
+      "description": [
+        "&c현재 체력의 FORMAT([consumeHealthRate], #%)&r를 소모하여",
+        "[../../manaName] 50&r를 회복합니다."
+      ]
+    },
+    "starDust": {
+      "displayName": "별의 조각",
+      "type": "CAST",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 200,
+      "cost": 15,
+      "castTime": 20,
+      "castColor": 65535,
+      "range": 16.0,
+      "damageCoefficient": "0.85ATK",
+      "projectileTick": 16,
+      "projectileRange": 24.0,
+      "description": [
+        "별의 조각을 소환하여 지정한 대상의 위치로",
+        "발사하여 적중된 적에게 [damageCoefficient]의 피해를 입힙니다."
+      ]
+    }
+  }
+}
