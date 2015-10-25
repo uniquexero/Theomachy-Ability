@@ -37,7 +37,7 @@
       "levelRequirement": 10,
       "cost": 15,
       "cooldown": 40,
-      "castTime": 60,
+      "castTime": 30,
       "channeling": true,
       "castColor": 65535,
       "healCoefficient": "1INT",
