@@ -19,8 +19,8 @@
     "firebolt": {
       "displayName": "불의 화살",
       "type": "CAST",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4533,
+      "iconData": 43,
       "cost": 20,
       "cooldown": 30,
       "castTime": 10,
@@ -36,8 +36,8 @@
     "burn": {
       "displayName": "화상",
       "type": "PASSIVE",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4531,
+      "iconData": 67,
       "levelRequirement": 10,
       "damageBonusRate": 0.2,
       "burnDuration": 100,
@@ -50,8 +50,8 @@
     "flare": {
       "displayName": "플레어",
       "type": "CAST",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4533,
+      "iconData": 45,
       "levelRequirement": 20,
       "cost": 35,
       "cooldown": 120,
@@ -69,8 +69,8 @@
     "manaDrain": {
       "displayName": "마나 흡수",
       "type": "PASSIVE",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4531,
+      "iconData": 58,
       "levelRequirement": 40,
       "restoreManaByLossMana": 0.3,
       "description": [
@@ -80,8 +80,8 @@
     "explosion": {
       "displayName": "폭발",
       "type": "CAST",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4533,
+      "iconData": 44,
       "levelRequirement": 60,
       "cost": 35,
       "cooldown": 240,
@@ -102,8 +102,8 @@
     "blink": {
       "displayName": "블링크",
       "type": "MOVEMENT",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4531,
+      "iconData": 209,
       "levelRequirement": 90,
       "cost": 10,
       "cooldown": 200,
@@ -120,8 +120,8 @@
     "doom": {
       "displayName": "파멸",
       "type": "CAST",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4532,
+      "iconData": 185,
       "levelRequirement": 120,
       "cost": 15,
       "cooldown": 140,
@@ -140,8 +140,8 @@
     "flameControl": {
       "displayName": "화염 지배",
       "type": "PASSIVE",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4531,
+      "iconData": 120,
       "levelRequirement": 160,
       "regenHealthByDamageRate": 0.1,
       "description": [
@@ -151,8 +151,8 @@
     "hellFire": {
       "displayName": "지옥의 불길",
       "type": "CAST",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4533,
+      "iconData": 46,
       "levelRequirement": 200,
       "cost": 40,
       "cooldown": 500,
