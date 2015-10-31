@@ -31,7 +31,7 @@
     "magicArrow": {
       "displayName": "마법의 화살",
       "type": "PASSIVE",
-      "iconId": 4466,
+      "iconId": 262,
       "iconData": 11,
       "damageMinCoefficient": "0.5ATK",
       "damageMaxCoefficient": "1ATK",
