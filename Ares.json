@@ -13,6 +13,19 @@
     "검을 이용하여 근접 피해를 입히는 능력입니다."
   ],
   "skill": {
+    "endure": {
+      "displayName": "인내",
+      "type": "PASSIVE",
+      "iconId": 4532,
+      "iconData": 176,
+      "levelRequirement": 0,
+      "cooldown": 60,
+      "monsterDamageReduce": 0.4,
+      "description": [
+        "§c지속 효과: 몬스터로 부터 받는 피해량이 FORMAT([monsterDamageReduce], #%)감소합니다.",
+				"§b사용 효과: 활성화시 넉백을 당하지 않습니다."
+      ]
+    },
     "swordsmanship": {
       "displayName": "검술",
       "type": "CAST",
@@ -78,23 +91,12 @@
         "FORMAT(EVAL([speedDuration] / 20))초간 이동속도가 &2[speedBonus] &r증가합니다."
       ]
     },
-    "endure": {
-      "displayName": "인내",
-      "type": "PASSIVE",
-      "iconId": 4532,
-      "iconData": 176,
-      "levelRequirement": 60,
-      "cooldown": 60,
-      "description": [
-        "활성화시 넉백을 당하지 않습니다."
-      ]
-    },
     "sweepingStrike": {
       "displayName": "휩쓸기",
       "type": "CAST",
       "iconId": 4531,
       "iconData": 185,
-      "levelRequirement": 90,
+      "levelRequirement": 60,
       "cost": 60,
       "cooldown": 240,
       "castTime": 10,
