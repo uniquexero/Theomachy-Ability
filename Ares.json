@@ -22,8 +22,8 @@
       "cooldown": 60,
       "monsterDamageReduce": 0.4,
       "description": [
-        "§c지속 효과: 몬스터로 부터 받는 피해량이 FORMAT([monsterDamageReduce], #%)감소합니다.",
-				"§b사용 효과: 활성화시 넉백을 당하지 않습니다."
+        "&c지속 효과: 몬스터로 부터 받는 피해량이 FORMAT([monsterDamageReduce], #%) 감소합니다.",
+        "&b사용 효과: 활성화시 넉백을 당하지 않습니다."
       ]
     },
     "swordsmanship": {
