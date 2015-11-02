@@ -41,7 +41,7 @@
       "castTime": 10,
       "castColor": 65535,
       "rageDuration": 100,
-      "criticalRateBonus": 50,
+      "criticalRateBonus": 35,
       "description": [
         "FORMAT(EVAL([rageDuration] / 20))초간 치명타 확률이 &b[criticalRateBonus]% &r추가됩니다."
       ]
@@ -53,7 +53,7 @@
       "iconData": 16,
       "levelRequirement": 20,
       "cooldown": 60,
-      "manaPerAttack": 20,
+      "manaPerAttack": 30,
       "bonusDamageCoefficient": "0.5DEF",
       "stunDuration": 10,
       "description": [
