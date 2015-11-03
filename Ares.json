@@ -49,12 +49,12 @@
       "iconId": 4533,
       "iconData": 118,
       "levelRequirement": 10,
-      "cost": 50,
-      "cooldown": 200,
+      "cost": 60,
+      "cooldown": 500,
       "castTime": 10,
       "castColor": 65535,
       "rageDuration": 100,
-      "criticalRateBonus": 35,
+      "criticalRateBonus": 55,
       "description": [
         "FORMAT(EVAL([rageDuration] / 20))초간 치명타 확률이 &b[criticalRateBonus]% &r추가됩니다."
       ]
