@@ -21,13 +21,13 @@
       "type": "CAST",
       "iconId": 4533,
       "iconData": 43,
-      "cost": 20,
+      "cost": 15,
       "cooldown": 30,
       "castTime": 10,
       "castColor": 16755200,
       "range": 12.0,
       "projectileTick": 12,
-      "damageCoefficient": "1.2ATK",
+      "damageCoefficient": "1.1ATK",
       "description": [
         "대상에게 불 화살을 발사하여",
         "[damageCoefficient]의 마법 피해를 입힙니다."
