@@ -93,7 +93,7 @@
       "timeslipDuration": 140,
       "description": [
         "FORMAT(EVAL([timeslipDuration] / 20))초간 모든 스킬들의 시전시간이",
-        "FORMAT(EVAL([reduceCastTime] / 20), #%) 감소합니다."
+        "FORMAT([reduceCastTime], #%) 감소합니다."
       ]
     },
     "cheering": {
