@@ -9,7 +9,9 @@
   "manaName": "&b마나",
   "attackBonus": "INTELLIGENCE",
   "information": [],
-  "description": ["치유와 구속, 기절로 아군을 지원 할 수 있는 능력입니다."],
+  "description": [
+    "치유와 구속, 기절로 아군을 지원 할 수 있는 능력입니다."
+  ],
   "skill": {
     "spellOfBinding": {
       "displayName": "속박의 주문",
@@ -18,8 +20,9 @@
       "iconData": 47,
       "cost": 10,
       "cooldown": 0,
-      "castTime": 30
+      "castTime": 40,
       "range": 10.0,
+      "castColor": 65535,
       "damageCoefficient": "1ATK",
       "entangleDuration": 40,
       "resistanceDuration": 140,

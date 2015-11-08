@@ -1,0 +1,94 @@
+{
+  "displayName": "이오케이라",
+  "type": "MARKSMAN",
+  "iconId": 403,
+  "iconData": 0,
+  "mana": 50,
+  "manaRegen": 0.0,
+  "manaColor": 65535,
+  "manaName": "&b마나",
+  "attackBonus": "STRENGTH",
+  "information": [],
+  "description": [
+    "빠른 연사 속도로 마법 화살을 발사하는 능력입니다.",
+    "순간 단일 표적 피해량이 매우 높습니다."
+  ],
+  "skill": {
+    "arrowShower": {
+      "displayName": "화살 소나기",
+      "type": "CAST",
+      "iconId": 4533,
+      "iconData": 141,
+      "cost": 1,
+      "cooldown": 7,
+      "range": 10.0,
+      "damageCoefficient": "0.4ATK",
+      "projectileSize": 0.1,
+      "projectileTick": 6,
+      "description": [
+        "전방으로 마법 화살을 발사하여 적중되는 적에게",
+        "[damageCoefficient]의 피해를 입힙니다."
+      ]
+    },
+    "reload": {
+      "displayName": "장전",
+      "type": "CAST",
+      "iconId": 4533,
+      "iconData": 151,
+      "cooldown": 360,
+      "castTime": 20,
+      "castColor": 65535,
+      "manaRegen": 25,
+      "description": [
+        "[../../manaName]&r(을)를 [manaRegen] 회복합니다."
+      ]
+    },
+    "target": {
+      "displayName": "표적",
+      "type": "PASSIVE",
+      "iconId": 4533,
+      "iconData": 149,
+      "levelRequirement": 10,
+      "damageAmplificationPerAttack": 0.025,
+      "targetDuration": 100,
+      "targetMaxStack": 10,
+      "description": [
+        "적을 공격시 대상에게 FORMAT(EVAL([targetDuration] / 20)) 초간 [displayName] 효과를 줍니다.",
+        "효과가 지속되는 동안 대상에게 가하는 피해량이",
+        "FORMAT([damageAmplificationPerAttack], #%) 증가합니다. (최대 FORMAT(EVAL([damageAmplificationPerAttack] * [targetMaxStack]), #%))"
+      ]
+    },
+    "penetrate": {
+      "displayName": "꿰뚫기",
+      "type": "CAST",
+      "iconId": 4533,
+      "iconData": 2,
+      "levelRequirement": 20,
+      "cost": 5,
+      "cooldown": 300,
+      "range": 24.0,
+      "maxDamageCoefficient": "2ATK",
+      "maxStunDuration": 40,
+      "description": [
+        "범위 안에 [../target/displayName] 효과를 가진 적을 효과 중첩에 따라",
+        "최대 [maxDamageCoefficient]의 피해를 입히고 FORMAT(EVAL([maxStunDuration] / 20))초간 기절시킵니다."
+      ]
+    },
+    "rapidFire": {
+      "displayName": "래피드 파이어",
+      "type": "CAST",
+      "iconId": 4533,
+      "iconData": 153,
+      "levelRequirement": 60,
+      "cooldown": 400,
+      "castTime": 20,
+      "castColor": 65535,
+      "reduceShowerCooldown": 0.5,
+      "duration": 100,
+      "description": [
+        "FORMAT(EVAL([duration] / 20))초간 &c[../arrowShower/displayName]&r의 재사용 대기시간이",
+        "FORMAT([reduceShowerCooldown], #%) 감소합니다."
+      ]
+    }
+  }
+}
