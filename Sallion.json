@@ -84,7 +84,7 @@
       "iconData": 44,
       "levelRequirement": 60,
       "cost": 25,
-      "cooldown": 60,
+      "cooldown": 50,
       "castTime": 20,
       "channeling": true,
       "castColor": 65535,
