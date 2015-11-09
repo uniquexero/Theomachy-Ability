@@ -7,7 +7,7 @@
   "manaRegen": 0.0,
   "manaColor": 65535,
   "manaName": "&b마나",
-  "attackBonus": "STRENGTH",
+  "attackBonus": "DEXTERITY",
   "information": [],
   "description": [
     "빠른 연사 속도로 마법 화살을 발사하는 능력입니다.",
@@ -20,10 +20,10 @@
       "iconId": 4533,
       "iconData": 141,
       "cost": 1,
-      "cooldown": 7,
+      "cooldown": 15,
       "range": 10.0,
       "damageCoefficient": "0.4ATK",
-      "projectileSize": 0.1,
+      "projectileSize": 0.25,
       "projectileTick": 6,
       "description": [
         "전방으로 마법 화살을 발사하여 적중되는 적에게",
