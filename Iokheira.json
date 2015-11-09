@@ -74,6 +74,17 @@
         "최대 [maxDamageCoefficient]의 피해를 입히고 FORMAT(EVAL([maxStunDuration] / 20))초간 기절시킵니다."
       ]
     },
+    "hit": {
+      "displayName": "적중",
+      "type": "PASSIVE",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 40,
+      "manaRegenPerCritical": 1,
+      "description": [
+        "치명타시 마나를 [manaRegen] 회복합니다."
+      ]
+    },
     "rapidFire": {
       "displayName": "래피드 파이어",
       "type": "CAST",
