@@ -81,7 +81,7 @@
       "iconId": 4531,
       "iconData": 209,
       "levelRequirement": 40,
-      "cost": 45,
+      "cost": 30,
       "cooldown": 200,
       "castTime": 20,
       "castColor": 65535,

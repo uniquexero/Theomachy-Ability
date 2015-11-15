@@ -35,7 +35,7 @@
       "iconData": 11,
       "damageMinCoefficient": "0.5ATK",
       "damageMaxCoefficient": "1ATK",
-      "damageCriticalBonus": 0.7,
+      "damageCriticalBonus": 1.0,
       "regenMana": 1,
       "critRegenMana": 2,
       "projectileVelocity": 4.0,
