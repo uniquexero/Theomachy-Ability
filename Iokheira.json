@@ -82,7 +82,7 @@
       "levelRequirement": 40,
       "manaRegenPerCritical": 1,
       "description": [
-        "치명타시 마나를 [manaRegen] 회복합니다."
+        "치명타시 마나를 [manaRegenPerCritical] 회복합니다."
       ]
     },
     "rapidFire": {
