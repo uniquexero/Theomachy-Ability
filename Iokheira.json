@@ -77,8 +77,8 @@
     "hit": {
       "displayName": "적중",
       "type": "PASSIVE",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4533,
+      "iconData": 152,
       "levelRequirement": 40,
       "manaRegenPerCritical": 1,
       "description": [
@@ -104,8 +104,8 @@
     "concentration": {
       "displayName": "집중",
       "type": "PASSIVE",
-      "iconId": 369,
-      "iconData": 0,
+      "iconId": 4531,
+      "iconData": 213,
       "levelRequirement": 90,
       "reduceCooldown": 1,
       "description": [
