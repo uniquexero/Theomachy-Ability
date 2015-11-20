@@ -100,6 +100,18 @@
         "FORMAT(EVAL([duration] / 20))초간 &c[../arrowShower/displayName]&r의 재사용 대기시간이",
         "FORMAT([reduceShowerCooldown], #%) 감소합니다."
       ]
+    },
+    "concentration": {
+      "displayName": "집중",
+      "type": "PASSIVE",
+      "iconId": 369,
+      "iconData": 0,
+      "levelRequirement": 90,
+      "reduceCooldown": 1,
+      "description": [
+        "&c[../arrowShower/displayName] &r적중시 &c[../arrowShower/displayName]&r의 재사용 대기시간이",
+        "FORMAT(EVAL([reduceCooldown] / 20))초 감소합니다."
+      ]
     }
   }
 }
