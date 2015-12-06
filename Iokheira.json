@@ -16,15 +16,15 @@
   "skill": {
     "arrowShower": {
       "displayName": "화살 소나기",
+      "iconId": 4469,
+      "iconData": 49,
       "type": "CAST",
-      "iconId": 4533,
-      "iconData": 141,
       "cost": 1,
       "cooldown": 15,
       "range": 10.0,
-      "damageCoefficient": "0.4ATK",
-      "projectileSize": 0.25,
-      "projectileTick": 6,
+      "damageCoefficient": "0.5ATK",
+      "projectileSize": 1.0,
+      "projectileTick": 4,
       "description": [
         "전방으로 마법 화살을 발사하여 적중되는 적에게",
         "[damageCoefficient]의 피해를 입힙니다."
@@ -33,8 +33,8 @@
     "reload": {
       "displayName": "장전",
       "type": "CAST",
-      "iconId": 4533,
-      "iconData": 151,
+      "iconId": 4466,
+      "iconData": 4,
       "cooldown": 360,
       "castTime": 20,
       "castColor": 65535,
@@ -55,7 +55,7 @@
       "description": [
         "적을 공격시 대상에게 FORMAT(EVAL([targetDuration] / 20)) 초간 [displayName] 효과를 줍니다.",
         "효과가 지속되는 동안 대상에게 가하는 피해량이",
-        "FORMAT([damageAmplificationPerAttack], #%) 증가합니다. (최대 FORMAT(EVAL([damageAmplificationPerAttack] * [targetMaxStack]), #%))"
+        "FORMAT([damageAmplificationPerAttack], #.#%) 증가합니다. (최대 FORMAT(EVAL([damageAmplificationPerAttack] * [targetMaxStack]), #%))"
       ]
     },
     "penetrate": {
@@ -68,21 +68,31 @@
       "cooldown": 300,
       "range": 24.0,
       "maxDamageCoefficient": "2ATK",
-      "maxStunDuration": 40,
+      "minStunDuration": 40,
+      "maxStunDuration": 80,
+      "cooldownMonster": 200,
       "description": [
         "범위 안에 [../target/displayName] 효과를 가진 적을 효과 중첩에 따라",
-        "최대 [maxDamageCoefficient]의 피해를 입히고 FORMAT(EVAL([maxStunDuration] / 20))초간 기절시킵니다."
+        "최대 [maxDamageCoefficient]의 피해를 입히고 FORMAT(EVAL([minStunDuration] / 20))~FORMAT(EVAL([maxStunDuration] / 20))초간 기절시킵니다.",
+        "몬스터에게 사용시 재사용 대기시간이 FORMAT(EVAL([cooldownMonster] / 20))초로 적용됩니다."
       ]
     },
-    "hit": {
-      "displayName": "적중",
-      "type": "PASSIVE",
+    "snare": {
+      "displayName": "올가미",
+      "type": "CAST",
       "iconId": 4533,
-      "iconData": 152,
+      "iconData": 100,
       "levelRequirement": 40,
-      "manaRegenPerCritical": 1,
+      "cost": 5,
+      "cooldown": 200,
+      "castTime": 10,
+      "channeling": true,
+      "castColor": 65535,
+      "range": 16.0,
+      "slowAmplification": 0.3,
+      "slowDuration": 100,
       "description": [
-        "치명타시 마나를 [manaRegenPerCritical] 회복합니다."
+        "지정한 대상의 이동속도를 FORMAT([slowAmplification], #%) 낮춥니다."
       ]
     },
     "rapidFire": {
@@ -101,16 +111,70 @@
         "FORMAT([reduceShowerCooldown], #%) 감소합니다."
       ]
     },
-    "concentration": {
-      "displayName": "집중",
+    "explosionArrow": {
+      "displayName": "폭발화살",
       "type": "PASSIVE",
-      "iconId": 4531,
-      "iconData": 213,
+      "iconId": 4533,
+      "iconData": 146,
       "levelRequirement": 90,
-      "reduceCooldown": 1,
+      "velocity": 0.1,
+      "manaPerExplosion": 1,
+      "information": [
+        "적중시 [../../manaName] 소모 1"
+      ],
       "description": [
-        "&c[../arrowShower/displayName] &r적중시 &c[../arrowShower/displayName]&r의 재사용 대기시간이",
-        "FORMAT(EVAL([reduceCooldown] / 20))초 감소합니다."
+        "웅크린채 [../arrowShower/displayName](을)를 시전시",
+        "폭발 효과를 추가하여 적중시 대상을",
+        "뒤로 살짝 밀어냅니다."
+      ]
+    },
+    "multishot": {
+      "displayName": "멀티샷",
+      "type": "CAST",
+      "iconId": 4533,
+      "iconData": 151,
+      "levelRequirement": 120,
+      "cooldown": 60,
+      "radius": 2.5,
+      "damageAmplification": 0.75,
+      "manaPerShot": 1,
+      "information": [
+        "적중시 [../../manaName]소모 1"
+      ],
+      "description": [
+        "활성화시 [../arrowShower/displayName](이)가 주위 적에게",
+        "FORMAT([damageAmplification], #%)의 피해를 입힙니다."
+      ]
+    },
+    "soulbolt": {
+      "displayName": "소울볼트",
+      "type": "CAST",
+      "iconId": 4533,
+      "iconData": 145,
+      "levelRequirement": 160,
+      "cooldown": 60,
+      "manaPerShot": 1,
+      "reduceShowerCooldown": 0.5,
+      "information": [
+        "발당 [../../manaName]소모 1"
+      ],
+      "description": [
+        "활성화시 [../arrowShower/displayName]의 재사용 대기시간이",
+        "FORMAT([reduceShowerCooldown], #%) 감소합니다."
+      ]
+    },
+    "infinity": {
+      "displayName": "무한",
+      "type": "CAST",
+      "iconId": 4533,
+      "iconData": 90,
+      "levelRequirement": 200,
+      "cost": 10,
+      "cooldown": 400,
+      "duration": 100,
+      "description": [
+        "지속시간동안 [../arrowShower/displayName]의",
+        "[../../manaName]&r의 소모량을 제거합니다."
       ]
     }
   }

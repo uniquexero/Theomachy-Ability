@@ -18,12 +18,11 @@
       "type": "PASSIVE",
       "iconId": 4532,
       "iconData": 176,
-      "levelRequirement": 0,
       "cooldown": 60,
-      "monsterDamageReduce": 0.3,
+      "monsterDamageReduce": 0.4,
       "description": [
-        "&c지속 효과: 몬스터로 부터 받는 피해량이 FORMAT([monsterDamageReduce], #%) 감소합니다.",
-        "&b사용 효과: 활성화시 넉백을 당하지 않습니다."
+        "몬스터로 부터 받는 피해량이 FORMAT([monsterDamageReduce], #%) 감소하며",
+        "넉백을 당하지 않습니다."
       ]
     },
     "swordsmanship": {
@@ -108,6 +107,20 @@
         "적을 가격합니다."
       ]
     },
+    "berserk": {
+      "displayName": "버서크",
+      "type": "CAST",
+      "iconId": 4531,
+      "iconData": 211,
+      "levelRequirement": 90,
+      "cooldown": 300,
+      "castTime": 10,
+      "castColor": 65535,
+      "regenMana": 40,
+      "description": [
+        "[../../manaName]&r를 [regenMana] 회복합니다."
+      ]
+    },
     "flash": {
       "displayName": "섬광",
       "type": "CAST",
@@ -124,20 +137,6 @@
       "description": [
         "지정한 적에게 돌진하여 [damageCoefficient]의 피해를",
         "입히고 FORMAT(EVAL([stunDuration] / 20))초간 기절시킵니다."
-      ]
-    },
-    "berserk": {
-      "displayName": "버서크",
-      "type": "CAST",
-      "iconId": 4531,
-      "iconData": 211,
-      "levelRequirement": 160,
-      "cooldown": 300,
-      "castTime": 10,
-      "castColor": 65535,
-      "regenMana": 40,
-      "description": [
-        "[../../manaName]&r를 [regenMana] 회복합니다."
       ]
     },
     "smite": {

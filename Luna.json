@@ -103,15 +103,15 @@
       ]
     },
     "sharpEye": {
-      "displayName": "예리한 감각",
-      "type": "PASSIVE",
       "iconId": 4533,
       "iconData": 149,
+      "displayName": "예리한 감각",
+      "type": "PASSIVE",
       "levelRequirement": 60,
-      "coefficient": 0.1,
+      "coefficient": 10.0,
       "description": [
         "치명타 확률이 증가합니다.",
-        "추가 확률: FORMAT([coefficient])LV&6%"
+        "추가 확률: FORMAT(EVAL([coefficient] / 100))LV&6%"
       ]
     },
     "doubleShot": {

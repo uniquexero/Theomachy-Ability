@@ -18,19 +18,19 @@
   "skill": {
     "firebolt": {
       "displayName": "불의 화살",
-      "type": "CAST",
       "iconId": 4533,
       "iconData": 43,
-      "cost": 15,
-      "cooldown": 30,
-      "castTime": 10,
+      "type": "CAST",
+      "cost": 20,
+      "cooldown": 40,
       "castColor": 16755200,
       "range": 12.0,
-      "projectileTick": 12,
-      "damageCoefficient": "1.1ATK",
+      "radius": 1.5,
+      "projectileTick": 10,
+      "damageCoefficient": "1ATK",
       "description": [
-        "대상에게 불 화살을 발사하여",
-        "[damageCoefficient]의 마법 피해를 입힙니다."
+        "지정한 방향으로 불 화살을 발사하여 적이나 지형에",
+        "부딪힐 때 폭발하여 주위 적에게 [damageCoefficient]의 피해를 입힙니다."
       ]
     },
     "burn": {
@@ -53,13 +53,13 @@
       "iconId": 4533,
       "iconData": 45,
       "levelRequirement": 20,
-      "cost": 20,
-      "cooldown": 100,
+      "cost": 25,
+      "cooldown": 120,
       "castTime": 20,
       "channeling": true,
       "castColor": 16719904,
       "range": 12.0,
-      "damageCoefficient": "1.05ATK",
+      "damageCoefficient": "1.2ATK",
       "stunDuration": 40,
       "description": [
         "지정한 대상에게 폭발을 일으켜 [damageCoefficient]의",
@@ -84,13 +84,13 @@
       "iconData": 44,
       "levelRequirement": 60,
       "cost": 25,
-      "cooldown": 50,
-      "castTime": 20,
+      "cooldown": 240,
+      "castTime": 40,
       "channeling": true,
       "castColor": 65535,
       "range": 12.0,
       "radius": 8.0,
-      "damageCoefficient": "1ATK",
+      "damageCoefficient": "1.2ATK",
       "slowRate": 0.5,
       "slowDuration": 50,
       "description": [
@@ -99,32 +99,14 @@
         "FORMAT([slowRate], #%)의 둔화효과를 줍니다."
       ]
     },
-    "blink": {
-      "displayName": "블링크",
-      "type": "MOVEMENT",
-      "iconId": 4531,
-      "iconData": 209,
-      "levelRequirement": 90,
-      "cost": 10,
-      "cooldown": 160,
-      "castTime": 10,
-      "channeling": true,
-      "castColor": 65535,
-      "range": 16.0,
-      "highVertical": 5,
-      "lowVertical": 10,
-      "description": [
-        "앞으로 순간이동합니다."
-      ]
-    },
     "doom": {
       "displayName": "파멸",
       "type": "CAST",
       "iconId": 4532,
       "iconData": 185,
-      "levelRequirement": 120,
+      "levelRequirement": 90,
       "cost": 15,
-      "cooldown": 140,
+      "cooldown": 160,
       "castTime": 10,
       "castColor": 16711680,
       "range": 12.0,
@@ -135,6 +117,24 @@
         "파멸의 저주가 걸린 대상이 스킬에 의해",
         "피해를 입을경우 FORMAT([damageAmplification], #%)의 추가피해를",
         "입습니다."
+      ]
+    },
+    "blink": {
+      "displayName": "블링크",
+      "type": "MOVEMENT",
+      "iconId": 4531,
+      "iconData": 209,
+      "levelRequirement": 120,
+      "cost": 10,
+      "cooldown": 160,
+      "castTime": 10,
+      "channeling": true,
+      "castColor": 65535,
+      "range": 16.0,
+      "highVertical": 5,
+      "lowVertical": 10,
+      "description": [
+        "앞으로 순간이동합니다."
       ]
     },
     "flameControl": {
