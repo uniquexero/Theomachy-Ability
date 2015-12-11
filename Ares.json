@@ -43,19 +43,19 @@
       ]
     },
     "rage": {
-      "displayName": "격노",
-      "type": "CAST",
       "iconId": 4533,
       "iconData": 118,
+      "displayName": "격노",
+      "type": "CAST",
       "levelRequirement": 10,
-      "cost": 60,
-      "cooldown": 500,
+      "cost": 50,
+      "cooldown": 200,
       "castTime": 10,
       "castColor": 65535,
       "rageDuration": 100,
-      "criticalRateBonus": 55,
+      "criticalRateBonus": 5000,
       "description": [
-        "FORMAT(EVAL([rageDuration] / 20))초간 치명타 확률이 &b[criticalRateBonus]% &r추가됩니다."
+        "FORMAT(EVAL([rageDuration] / 20))초간 치명타 확률이 &bFORMAT(EVAL([criticalRateBonus] / 100))% &r추가됩니다."
       ]
     },
     "criticalBlow": {
