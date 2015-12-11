@@ -23,7 +23,7 @@
       "castTime": 40,
       "range": 10.0,
       "castColor": 65535,
-      "damageCoefficient": "1ATK",
+      "damageCoefficient": "0.9ATK",
       "entangleDuration": 40,
       "resistanceDuration": 140,
       "description": [
@@ -40,11 +40,11 @@
       "type": "CAST",
       "levelRequirement": 10,
       "cost": 10,
-      "castTime": 40,
+      "castTime": 50,
       "channeling": true,
       "castColor": 65535,
       "healCoefficient": "0.5ATK",
-      "radius": 8,
+      "radius": 5,
       "description": [
         "자신과 주위 아군들의 체력을 [healCoefficient] 회복시킵니다."
       ]
@@ -71,7 +71,7 @@
       "iconData": 210,
       "levelRequirement": 40,
       "cost": 10,
-      "cooldown": 160,
+      "cooldown": 250,
       "castTime": 10,
       "channeling": true,
       "castColor": 65535,
@@ -109,7 +109,7 @@
       "cooldown": 400,
       "castTime": 40,
       "castColor": 65535,
-      "attackBonusCoefficient": "0.1ATK",
+      "attackBonusCoefficient": "0.15ATK",
       "cheeringDuration": 600,
       "radius": 8,
       "projectileVelocity": 1.0,

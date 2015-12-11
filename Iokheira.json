@@ -84,11 +84,11 @@
       "iconData": 100,
       "levelRequirement": 40,
       "cost": 5,
-      "cooldown": 200,
+      "cooldown": 250,
       "castTime": 10,
       "channeling": true,
       "castColor": 65535,
-      "range": 16.0,
+      "range": 12.0,
       "slowAmplification": 0.3,
       "slowDuration": 100,
       "description": [

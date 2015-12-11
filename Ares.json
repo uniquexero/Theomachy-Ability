@@ -81,10 +81,10 @@
       "iconData": 209,
       "levelRequirement": 40,
       "cost": 30,
-      "cooldown": 200,
+      "cooldown": 250,
       "castTime": 20,
       "castColor": 65535,
-      "speedDuration": 100,
+      "speedDuration": 120,
       "speedBonus": 100,
       "description": [
         "FORMAT(EVAL([speedDuration] / 20))초간 이동속도가 &2[speedBonus] &r증가합니다."
