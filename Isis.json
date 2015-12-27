@@ -110,7 +110,7 @@
       "castTime": 40,
       "castColor": 65535,
       "attackBonusCoefficient": "0.15ATK",
-      "cheeringDuration": 600,
+      "cheeringDuration": 500,
       "radius": 8,
       "projectileVelocity": 1.0,
       "description": [
