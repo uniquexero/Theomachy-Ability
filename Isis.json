@@ -109,7 +109,7 @@
       "cooldown": 400,
       "castTime": 40,
       "castColor": 65535,
-      "attackBonusCoefficient": "0.15ATK",
+      "attackBonusCoefficient": "0.2ATK",
       "cheeringDuration": 600,
       "radius": 8,
       "projectileVelocity": 1.0,
