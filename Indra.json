@@ -1,0 +1,169 @@
+{
+  "displayName": "인드라",
+  "type": "ASSASIN",
+  "iconId": 403,
+  "iconData": 0,
+  "mana": 200,
+  "manaRegen": 0.5,
+  "manaColor": 65535,
+  "manaName": "&b마나",
+  "attackBonus": "STRENGTH",
+  "information": [],
+  "description": [
+    "빠른 공격 속도와 이동기로 적을 순식간에 처치 할 수",
+    "있는 능력입니다."
+  ],
+  "skill": {
+    "mow": {
+      "displayName": "베기",
+      "type": "CAST",
+      "iconId": 4447,
+      "iconData": 126,
+      "cost": 10,
+      "cooldown": 15,
+      "range": 5.0,
+      "damageCoefficient": "0.75ATK",
+      "description": [
+        "전방에 있는 적을 베어 0.75ATK의 피해를 입힙니다."
+      ]
+    },
+    "sensation": {
+      "displayName": "선풍",
+      "type": "PASSIVE",
+      "iconId": 4531,
+      "iconData": 10,
+      "levelRequirement": 10,
+      "maxStack": 4,
+      "cooldownReduce": 2,
+      "duration": 60,
+      "description": [
+        "&c[../mow/displayName] &r스킬로 적을 공격시 &c[displayName]&r효과를 얻습니다.",
+        "효과는 FORMAT(EVAL([duration] / 20))초간 지속되며 지속시간동안",
+        "&c[../mow/displayName]&r의 재사용 대기시간이 FORMAT(EVAL([cooldownReduce] / 20))초 감소합니다.",
+        "&7(최대 [maxStack]회 중첩)"
+      ]
+    },
+    "windHealing": {
+      "displayName": "치유의 바람",
+      "type": "CAST",
+      "iconId": 4531,
+      "iconData": 136,
+      "levelRequirement": 20,
+      "cost": 20,
+      "cooldown": 400,
+      "description": [
+        "0.2STR + 0.2STR x &c[../sensation/displayName] 중첩&r만큼 체력을 회복합니다."
+      ]
+    },
+    "hemorrhage": {
+      "displayName": "출혈",
+      "type": "PASSIVE",
+      "iconId": 4531,
+      "iconData": 159,
+      "levelRequirement": 40,
+      "maxStack": 5,
+      "damageCoefficientPerStack": "0.02ATK",
+      "damageIntervalTicks": 10,
+      "duration": 100,
+      "description": [
+        "&c[../mow/displayName] &r스킬로 피해를 입힌 적에게 FORMAT(EVAL([duration] / 20))초간",
+        "&c[displayName] &r효과를 주고 FORMAT(EVAL([damageIntervalTicks] / 20))초마다 0.02ATK의 피해를",
+        "입힙니다. &7(최대 [maxStack] 중첩)"
+      ]
+    },
+    "crescent": {
+      "displayName": "참월",
+      "type": "CAST",
+      "iconId": 4531,
+      "iconData": 164,
+      "levelRequirement": 60,
+      "cost": 20,
+      "cooldown": 200,
+      "range": 20.0,
+      "damageCoefficient": "1ATK",
+      "stunDuration": 50,
+      "projectileTick": 15,
+      "projectileSize": 2.0,
+      "description": [
+        "지정한 방향으로 참격을 날려서 적중된 적에게",
+        "1ATK의 피해를 입히고 FORMAT(EVAL([stunDuration] / 20))의 피해를 입힙니다."
+      ]
+    },
+    "swoop": {
+      "displayName": "급습",
+      "type": "CAST",
+      "iconId": 4531,
+      "iconData": 172,
+      "levelRequirement": 90,
+      "cost": 20,
+      "cooldown": 200,
+      "castTime": 10,
+      "castColor": 65535,
+      "range": 20.0,
+      "silenceDuration": 40,
+      "markDuration": 100,
+      "description": [
+        "&c[../crescent/displayName]&r 스킬이 적중된 대상에게 FORMAT(EVAL([markDuration] / 20))초간",
+        "표식을 남깁니다.",
+        "사용시 표식이 사라지며 대상의 뒤로",
+        "이동하여 FORMAT(EVAL([silenceDuration] / 20))초간 침묵시킵니다."
+      ]
+    },
+    "wildDance": {
+      "displayName": "멸신난무",
+      "type": "CAST",
+      "iconId": 4531,
+      "iconData": 103,
+      "levelRequirement": 120,
+      "cost": 50,
+      "cooldown": 400,
+      "castTime": 20,
+      "channeling": true,
+      "castColor": 65535,
+      "duration": 100,
+      "cooldownReduction": 0.5,
+      "description": [
+        "FORMAT(EVAL([duration] / 20))초간 &c[displayName] &r효과를 얻습니다.",
+        "지속시간동안 &c[../mow/displayName] &r스킬을 사용시 [../../manaName]&r(을)를",
+        "소모하지 않으며 재사용 대기시간이",
+        "FORMAT([cooldownReduction], #%) 감소합니다."
+      ]
+    },
+    "windShield": {
+      "displayName": "바람의 보호",
+      "type": "PASSIVE",
+      "iconId": 4531,
+      "iconData": 200,
+      "levelRequirement": 160,
+      "shieldRate": 0.1,
+      "maxShieldCoefficient": "0.5ATK",
+      "duration": 60,
+      "description": [
+        "공격 피해량의 FORMAT([shieldRate], #%)를 보호막으로 전환합니다.",
+        "보호막은 FORMAT(EVAL([duration] / 20))초간 유지되며 피해를",
+        "입을시 해당 수치만큼 피해량을 감소시키고",
+        "사라집니다. &7(최대 0.5ATK&7)"
+      ]
+    },
+    "tempest": {
+      "displayName": "폭풍",
+      "type": "CAST",
+      "iconId": 4532,
+      "iconData": 156,
+      "levelRequirement": 200,
+      "cost": 30,
+      "cooldown": 600,
+      "castTime": 10,
+      "castColor": 65535,
+      "duration": 60,
+      "speedBonusRate": 1.0,
+      "damageAmplification": 2.0,
+      "description": [
+        "사용시 FORMAT(EVAL([duration] / 20))초간 &c[displayName]&r 효과를 얻습니다.",
+        "지속시간동안 은신하며 이동속도가 FORMAT([speedBonusRate], #%) 증가합니다.",
+        "적에게 피해를 입힐경우 효과가 사라지며",
+        "대상에게 FORMAT([damageAmplification], #%)의 피해를 입힙니다."
+      ]
+    }
+  }
+}
