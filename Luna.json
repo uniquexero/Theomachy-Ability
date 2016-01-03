@@ -1,35 +1,35 @@
 {
-  "displayName": "ë£¨ë‚˜",
+  "displayName": "·ç³ª",
   "type": "MARKSMAN",
   "iconId": 403,
   "iconData": 0,
   "mana": 10,
   "manaRegen": 0.025,
   "manaColor": 16766720,
-  "manaName": "&6ì§‘ì¤‘",
+  "manaName": "&6ÁıÁß",
   "attackBonus": "DEXTERITY",
   "information": [],
   "description": [
-    "í™œì„ ì´ìš©í•˜ì—¬ ì ì—ê²Œ ì›ê±°ë¦¬ì—ì„œ",
-    "ì ì—ê²Œ ì§€ì†ì ì¸ í”¼í•´ë¥¼ ì…í ìˆ˜ ìˆëŠ”",
-    "ëŠ¥ë ¥ì…ë‹ˆë‹¤."
+    "È°À» ÀÌ¿ëÇÏ¿© Àû¿¡°Ô ¿ø°Å¸®¿¡¼­",
+    "Àû¿¡°Ô Áö¼ÓÀûÀÎ ÇÇÇØ¸¦ ÀÔÈú ¼ö ÀÖ´Â",
+    "´É·ÂÀÔ´Ï´Ù."
   ],
   "skill": {
     "goldenBow": {
-      "displayName": "ë§ˆë²•ì˜ í™œ",
+      "displayName": "¸¶¹ıÀÇ È°",
       "type": "CAST",
       "iconId": 4476,
       "iconData": 0,
       "cost": 2,
       "cooldown": 20,
       "description": [
-        "ì¼ë°˜ í™”ì‚´ ëŒ€ì‹  &c[../magicArrow/displayName]&rì„ ë°œì‚¬í•©ë‹ˆë‹¤.",
-        "ë°œì‚¬ëœ &c[../magicArrow/displayName]&rì€ ì§ì„ ìœ¼ë¡œ ì´ë™í•˜ë©°",
-        "ì ì—ê²Œ ì ì¤‘ ì‹œ í”¼í•´ë¥¼ ì…í™ë‹ˆë‹¤."
+        "ÀÏ¹İ È­»ì ´ë½Å &c[../magicArrow/displayName]&rÀ» ¹ß»çÇÕ´Ï´Ù.",
+        "¹ß»çµÈ &c[../magicArrow/displayName]&rÀº Á÷¼±À¸·Î ÀÌµ¿ÇÏ¸ç",
+        "Àû¿¡°Ô ÀûÁß ½Ã ÇÇÇØ¸¦ ÀÔÈü´Ï´Ù."
       ]
     },
     "magicArrow": {
-      "displayName": "ë§ˆë²•ì˜ í™”ì‚´",
+      "displayName": "¸¶¹ıÀÇ È­»ì",
       "type": "PASSIVE",
       "iconId": 262,
       "iconData": 11,
@@ -42,15 +42,15 @@
       "projectileSize": 1.0,
       "projectileTick": 4,
       "description": [
-        "ì ì¤‘ëœ ì ì—ê²Œ í™œ ì‹œìœ„ ë‹¹ê¹€ì— ë¹„ë¡€í•´",
-        "[damageMinCoefficient]-[damageMaxCoefficient]ì˜ ì›ê±°ë¦¬ í”¼í•´ë¥¼ ì…íˆê³ ",
-        "[regenMana]ì˜ [../../manaName]&r(ì„)ë¥¼ íšŒë³µí•©ë‹ˆë‹¤.",
-        "ì¹˜ëª…íƒ€ ì‹œ FORMAT([damageCriticalBonus], #%)ì˜ ì¶”ê°€ í”¼í•´ë¥¼ ì…íˆê³ ",
-        "[critRegenMana] [../../manaName]&r(ì„)ë¥¼ íšŒë³µí•©ë‹ˆë‹¤."
+        "ÀûÁßµÈ Àû¿¡°Ô È° ½ÃÀ§ ´ç±è¿¡ ºñ·ÊÇØ",
+        "[damageMinCoefficient]-[damageMaxCoefficient]ÀÇ ¿ø°Å¸® ÇÇÇØ¸¦ ÀÔÈ÷°í",
+        "[regenMana]ÀÇ [../../manaName]&r(À»)¸¦ È¸º¹ÇÕ´Ï´Ù.",
+        "Ä¡¸íÅ¸ ½Ã FORMAT([damageCriticalBonus], #%)ÀÇ Ãß°¡ ÇÇÇØ¸¦ ÀÔÈ÷°í",
+        "[critRegenMana] [../../manaName]&r(À»)¸¦ È¸º¹ÇÕ´Ï´Ù."
       ]
     },
     "stunShot": {
-      "displayName": "ìŠ¤í„´ìƒ·",
+      "displayName": "½ºÅÏ¼¦",
       "type": "CAST",
       "iconId": 4533,
       "iconData": 146,
@@ -60,13 +60,13 @@
       "damageAmplification": "0.2ATK",
       "stunDuration": 40,
       "description": [
-        "ì›…í¬ë¦°ì±„ &c[../magicArrow/displayName]&rì„ ì‹œì „ì‹œ ì ìš©ë©ë‹ˆë‹¤.",
-        "ì ì¤‘ì‹œ [damageAmplification]ì˜ ì¶”ê°€ í”¼í•´ë¥¼ ì…íˆê³ ",
-        "FORMAT(EVAL([stunDuration]/20))ì´ˆê°„ ê¸°ì ˆì‹œí‚µë‹ˆë‹¤."
+        "¿õÅ©¸°Ã¤ &c[../magicArrow/displayName]&rÀ» ½ÃÀü½Ã Àû¿ëµË´Ï´Ù.",
+        "ÀûÁß½Ã [damageAmplification]ÀÇ Ãß°¡ ÇÇÇØ¸¦ ÀÔÈ÷°í",
+        "FORMAT(EVAL([stunDuration]/20))ÃÊ°£ ±âÀı½ÃÅµ´Ï´Ù."
       ]
     },
     "shift": {
-      "displayName": "ë¬¼ëŸ¬ë‚˜ê¸°",
+      "displayName": "¹°·¯³ª±â",
       "type": "MOVEMENT",
       "iconId": 4531,
       "iconData": 198,
@@ -79,43 +79,43 @@
       "enemySlowRate": 0.2,
       "enemySlowDuration": 20,
       "description": [
-        "ê³µì¤‘ì—ì„œ ë„ì•½ì‹œ ë’¤ë¡œ ë¹ ë¥´ê²Œ ë¬¼ëŸ¬ë‚©ë‹ˆë‹¤.",
-        "ë™ì‹œì— ì£¼ë³€ FORMAT([enemySlowRange])ì¹¸ ë‚´ì— ìˆëŠ” ì ë“¤ì˜",
-        "ì´ë™ì†ë„ë¥¼ FORMAT(EVAL([enemySlowDuration] / 20))ì´ˆê°„ FORMAT([enemySlowRate], #%)ë‚®ì¶¥ë‹ˆë‹¤."
+        "°øÁß¿¡¼­ µµ¾à½Ã µÚ·Î ºü¸£°Ô ¹°·¯³³´Ï´Ù.",
+        "µ¿½Ã¿¡ ÁÖº¯ FORMAT([enemySlowRange])Ä­ ³»¿¡ ÀÖ´Â ÀûµéÀÇ",
+        "ÀÌµ¿¼Óµµ¸¦ FORMAT(EVAL([enemySlowDuration] / 20))ÃÊ°£ FORMAT([enemySlowRate], #%)³·Ãä´Ï´Ù."
       ]
     },
     "lunatic": {
-      "displayName": "ë£¨ë‚˜í‹±",
+      "displayName": "·ç³ªÆ½",
       "type": "PASSIVE",
       "iconId": 4533,
       "iconData": 32,
       "levelRequirement": 40,
-      "duration": 140,
+      "duration": 100,
       "damageCoefficient": "0.05DEX",
       "maxValue": 5,
       "information": [
-        "&aì§€ì†ì‹œê°„ 7"
+        "&aÁö¼Ó½Ã°£ 5"
       ],
       "description": [
-        "&c[../magicArrow/displayName]&rì´ ì ì¤‘ ì‹œ &c[displayName]&r íš¨ê³¼ë¥¼ ì–»ìœ¼ë©°",
-        "[damageCoefficient]ì˜ ì¶”ê°€í”¼í•´ë¥¼ ì…í™ë‹ˆë‹¤.",
-        "íš¨ê³¼ëŠ” ìµœëŒ€ [maxValue]ë²ˆ ì¤‘ì²©ë©ë‹ˆë‹¤."
+        "&c[../magicArrow/displayName]&rÀÌ ÀûÁß ½Ã &c[displayName]&r È¿°ú¸¦ ¾òÀ¸¸ç",
+        "[damageCoefficient]ÀÇ Ãß°¡ÇÇÇØ¸¦ ÀÔÈü´Ï´Ù.",
+        "È¿°ú´Â ÃÖ´ë [maxValue]¹ø ÁßÃ¸µË´Ï´Ù."
       ]
     },
     "sharpEye": {
       "iconId": 4533,
       "iconData": 149,
-      "displayName": "ì˜ˆë¦¬í•œ ê°ê°",
+      "displayName": "¿¹¸®ÇÑ °¨°¢",
       "type": "PASSIVE",
       "levelRequirement": 60,
       "coefficient": 10.0,
       "description": [
-        "ì¹˜ëª…íƒ€ í™•ë¥ ì´ ì¦ê°€í•©ë‹ˆë‹¤.",
-        "ì¶”ê°€ í™•ë¥ : FORMAT(EVAL([coefficient] / 100))LV&6%"
+        "Ä¡¸íÅ¸ È®·üÀÌ Áõ°¡ÇÕ´Ï´Ù.",
+        "Ãß°¡ È®·ü: FORMAT(EVAL([coefficient] / 100))LV&6%"
       ]
     },
     "doubleShot": {
-      "displayName": "ë”ë¸”ìƒ·",
+      "displayName": "´õºí¼¦",
       "type": "CAST",
       "iconId": 4533,
       "iconData": 148,
@@ -124,24 +124,24 @@
       "damageAmplification": 0.8,
       "intervalTick": 3,
       "description": [
-        "í™œì„±í™”/ë¹„í™œì„±í™” ìŠ¤í‚¬ì…ë‹ˆë‹¤.",
-        "&c[../goldenBow/displayName]&r ì‹œì „ì‹œ FORMAT([damageAmplification], #%) í”¼í•´ëŸ‰ì˜",
-        "&c[../magicArrow/displayName]&rì„ ì—°ì†ìœ¼ë¡œ ë‘ë°œ ë°œì‚¬í•©ë‹ˆë‹¤."
+        "È°¼ºÈ­/ºñÈ°¼ºÈ­ ½ºÅ³ÀÔ´Ï´Ù.",
+        "&c[../goldenBow/displayName]&r ½ÃÀü½Ã FORMAT([damageAmplification], #%) ÇÇÇØ·®ÀÇ",
+        "&c[../magicArrow/displayName]&rÀ» ¿¬¼ÓÀ¸·Î µÎ¹ß ¹ß»çÇÕ´Ï´Ù."
       ]
     },
     "amplifySense": {
-      "displayName": "ê°ê°ì˜ ì¦í­",
+      "displayName": "°¨°¢ÀÇ ÁõÆø",
       "type": "PASSIVE",
       "iconId": 4533,
       "iconData": 153,
       "levelRequirement": 120,
       "criticalDamageBonus": 0.15,
       "description": [
-        "ì¹˜ëª…íƒ€ í”¼í•´ëŸ‰ì´ FORMAT([criticalDamageBonus], #%)ì¦ê°€í•©ë‹ˆë‹¤."
+        "Ä¡¸íÅ¸ ÇÇÇØ·®ÀÌ FORMAT([criticalDamageBonus], #%)Áõ°¡ÇÕ´Ï´Ù."
       ]
     },
     "clarity": {
-      "displayName": "ê¸°ë ¥ ì¶©ì „",
+      "displayName": "±â·Â ÃæÀü",
       "type": "CAST",
       "iconId": 4531,
       "iconData": 211,
@@ -152,11 +152,11 @@
       "regenBonus": 2.0,
       "duration": 100,
       "description": [
-        "ì§€ì†ì‹œê°„ ë™ì•ˆ FORMAT(EVAL([regenBonus] * [duration] / 20))ì˜ ê¸°ë ¥ì„ íšŒë³µí•©ë‹ˆë‹¤."
+        "Áö¼Ó½Ã°£ µ¿¾È FORMAT(EVAL([regenBonus] * [duration] / 20))ÀÇ ±â·ÂÀ» È¸º¹ÇÕ´Ï´Ù."
       ]
     },
     "powerShot": {
-      "displayName": "íŒŒì›Œìƒ·",
+      "displayName": "ÆÄ¿ö¼¦",
       "type": "CAST",
       "iconId": 4533,
       "iconData": 143,
@@ -165,11 +165,11 @@
       "damageAmplificationPerMana": 0.25,
       "duration": 100,
       "description": [
-        "&c[displayName]&r íš¨ê³¼ë¥¼ ì–»ìŠµë‹ˆë‹¤.",
-        "ì§€ì†ì‹œê°„ ë‚´ì— &c[../goldenBow/displayName]&r ì‹œì „ ì‹œ",
-        "[../../manaName]&rì„ ëª¨ë‘ ì†Œëª¨í•˜ì—¬ ì¶”ê°€ í”¼í•´ë¥¼",
-        "ì…í™ë‹ˆë‹¤.",
-        "ìµœëŒ€ ì¶”ê°€ í”¼í•´ëŸ‰: FORMAT(EVAL([damageAmplificationPerMana] * [../../mana]), #%)"
+        "&c[displayName]&r È¿°ú¸¦ ¾ò½À´Ï´Ù.",
+        "Áö¼Ó½Ã°£ ³»¿¡ &c[../goldenBow/displayName]&r ½ÃÀü ½Ã",
+        "[../../manaName]&rÀ» ¸ğµÎ ¼Ò¸ğÇÏ¿© Ãß°¡ ÇÇÇØ¸¦",
+        "ÀÔÈü´Ï´Ù.",
+        "ÃÖ´ë Ãß°¡ ÇÇÇØ·®: FORMAT(EVAL([damageAmplificationPerMana] * [../../mana]), #%)"
       ]
     }
   }
