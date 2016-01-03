@@ -1,20 +1,20 @@
 {
-  "displayName": "ÀÌ½Ã½º",
+  "displayName": "ì´ì‹œìŠ¤",
   "type": "SUPPORT",
   "iconId": 403,
   "iconData": 0,
   "mana": 100,
   "manaRegen": 0.25,
   "manaColor": 65535,
-  "manaName": "&b¸¶³ª",
+  "manaName": "&bë§ˆë‚˜",
   "attackBonus": "INTELLIGENCE",
   "information": [],
   "description": [
-    "Ä¡À¯¿Í ±¸¼Ó, ±âÀı·Î ¾Æ±ºÀ» Áö¿ø ÇÒ ¼ö ÀÖ´Â ´É·ÂÀÔ´Ï´Ù."
+    "ì¹˜ìœ ì™€ êµ¬ì†, ê¸°ì ˆë¡œ ì•„êµ°ì„ ì§€ì› í•  ìˆ˜ ìˆëŠ” ëŠ¥ë ¥ì…ë‹ˆë‹¤."
   ],
   "skill": {
     "spellOfBinding": {
-      "displayName": "¼Ó¹ÚÀÇ ÁÖ¹®",
+      "displayName": "ì†ë°•ì˜ ì£¼ë¬¸",
       "type": "CAST",
       "iconId": 4531,
       "iconData": 47,
@@ -27,16 +27,16 @@
       "entangleDuration": 40,
       "resistanceDuration": 140,
       "description": [
-        "ÁöÁ¤ÇÑ ´ë»ó¿¡°Ô [damageCoefficient]ÀÇ ÇÇÇØ¸¦ ÀÔÈ÷°í",
-        "FORMAT(EVAL([entangleDuration] / 20))ÃÊ°£ ±¸¼Ó½ÃÅµ´Ï´Ù.",
-        "´ë»óÀÌ ÇÃ·¹ÀÌ¾îÀÏ °æ¿ì FORMAT(EVAL([resistanceDuration] / 20))ÃÊ¿¡ ÇÑ¹ø¸¸ ±¸¼ÓÀÌ",
-        "Àû¿ëµË´Ï´Ù."
+        "ì§€ì •í•œ ëŒ€ìƒì—ê²Œ [damageCoefficient]ì˜ í”¼í•´ë¥¼ ì…íˆê³ ",
+        "FORMAT(EVAL([entangleDuration] / 20))ì´ˆê°„ êµ¬ì†ì‹œí‚µë‹ˆë‹¤.",
+        "ëŒ€ìƒì´ í”Œë ˆì´ì–´ì¼ ê²½ìš° FORMAT(EVAL([resistanceDuration] / 20))ì´ˆì— í•œë²ˆë§Œ êµ¬ì†ì´",
+        "ì ìš©ë©ë‹ˆë‹¤."
       ]
     },
     "heal": {
       "iconId": 4531,
       "iconData": 139,
-      "displayName": "Ä¡À¯",
+      "displayName": "ì¹˜ìœ ",
       "type": "CAST",
       "levelRequirement": 10,
       "cost": 10,
@@ -46,11 +46,11 @@
       "healCoefficient": "0.5ATK",
       "radius": 5,
       "description": [
-        "ÀÚ½Å°ú ÁÖÀ§ ¾Æ±ºµéÀÇ Ã¼·ÂÀ» [healCoefficient] È¸º¹½ÃÅµ´Ï´Ù."
+        "ìì‹ ê³¼ ì£¼ìœ„ ì•„êµ°ë“¤ì˜ ì²´ë ¥ì„ [healCoefficient] íšŒë³µì‹œí‚µë‹ˆë‹¤."
       ]
     },
     "united": {
-      "displayName": "¿¬ÇÕ",
+      "displayName": "ì—°í•©",
       "type": "PASSIVE",
       "iconId": 4531,
       "iconData": 214,
@@ -58,14 +58,14 @@
       "damageRate": 0.2,
       "unitedDuration": 400,
       "description": [
-        "ÀÚ½ÅÀ¸·ÎºÎÅÍ ÀÌ·Î¿î È¿°ú¸¦ ¹ŞÀº ¾Æ±º¿¡°Ô",
-        "FORMAT(EVAL([unitedDuration] / 20))ÃÊ°£ ¿¬ÇÕ È¿°ú¸¦ ºÎ¿©ÇÕ´Ï´Ù.",
-        "È¿°ú°¡ Áö¼ÓµÇ´Â µ¿¾È ¾Æ±ºÀÌ Àû¿¡°Ô ÀÔÈ÷´Â ÇÇÇØ·®ÀÇ",
-        "FORMAT([damageRate], #%)ÀÇ Ãß°¡ ÇÇÇØ¸¦ ÀÔÈü´Ï´Ù."
+        "ìì‹ ìœ¼ë¡œë¶€í„° ì´ë¡œìš´ íš¨ê³¼ë¥¼ ë°›ì€ ì•„êµ°ì—ê²Œ",
+        "FORMAT(EVAL([unitedDuration] / 20))ì´ˆê°„ ì—°í•© íš¨ê³¼ë¥¼ ë¶€ì—¬í•©ë‹ˆë‹¤.",
+        "íš¨ê³¼ê°€ ì§€ì†ë˜ëŠ” ë™ì•ˆ ì•„êµ°ì´ ì ì—ê²Œ ì…íˆëŠ” í”¼í•´ëŸ‰ì˜",
+        "FORMAT([damageRate], #%)ì˜ ì¶”ê°€ í”¼í•´ë¥¼ ì…í™ë‹ˆë‹¤."
       ]
     },
     "blink": {
-      "displayName": "ºí¸µÅ©",
+      "displayName": "ë¸”ë§í¬",
       "type": "MOVEMENT",
       "iconId": 4531,
       "iconData": 210,
@@ -79,11 +79,11 @@
       "highVertical": 5,
       "lowVertical": 10,
       "description": [
-        "¾ÕÀ¸·Î ¼ø°£ÀÌµ¿ÇÕ´Ï´Ù."
+        "ì•ìœ¼ë¡œ ìˆœê°„ì´ë™í•©ë‹ˆë‹¤."
       ]
     },
     "timeslip": {
-      "displayName": "¾î±ß³­ ½Ã°£",
+      "displayName": "ì–´ê¸‹ë‚œ ì‹œê°„",
       "type": "CAST",
       "iconId": 4531,
       "iconData": 20,
@@ -95,14 +95,14 @@
       "reduceCastTime": 0.5,
       "timeslipDuration": 140,
       "description": [
-        "FORMAT(EVAL([timeslipDuration] / 20))ÃÊ°£ ¸ğµç ½ºÅ³µéÀÇ ½ÃÀü½Ã°£ÀÌ",
-        "FORMAT([reduceCastTime], #%) °¨¼ÒÇÕ´Ï´Ù."
+        "FORMAT(EVAL([timeslipDuration] / 20))ì´ˆê°„ ëª¨ë“  ìŠ¤í‚¬ë“¤ì˜ ì‹œì „ì‹œê°„ì´",
+        "FORMAT([reduceCastTime], #%) ê°ì†Œí•©ë‹ˆë‹¤."
       ]
     },
     "cheering": {
       "iconId": 4533,
       "iconData": 81,
-      "displayName": "Ä¡¾î¸µ",
+      "displayName": "ì¹˜ì–´ë§",
       "type": "CAST",
       "levelRequirement": 90,
       "cost": 30,
@@ -110,16 +110,16 @@
       "castTime": 40,
       "castColor": 65535,
       "attackBonusCoefficient": "0.15INT",
-      "cheeringDuration": 600,
+      "cheeringDuration": 500,
       "radius": 8,
       "projectileVelocity": 1.0,
       "description": [
-        "ÀÚ½Å°ú ÁÖÀ§ ¾Æ±ºµéÀÇ °ø°İ·ÂÀ» FORMAT(EVAL([cheeringDuration] / 20))ÃÊ°£",
-        "[attackBonusCoefficient] »ó½Â½ÃÅµ´Ï´Ù."
+        "ìì‹ ê³¼ ì£¼ìœ„ ì•„êµ°ë“¤ì˜ ê³µê²©ë ¥ì„ FORMAT(EVAL([cheeringDuration] / 20))ì´ˆê°„",
+        "[attackBonusCoefficient] ìƒìŠ¹ì‹œí‚µë‹ˆë‹¤."
       ]
     },
     "stun": {
-      "displayName": "½ºÅÏ",
+      "displayName": "ìŠ¤í„´",
       "type": "CAST",
       "iconId": 4531,
       "iconData": 173,
@@ -132,12 +132,12 @@
       "damageCoefficient": "0.6ATK",
       "stunDuration": 40,
       "description": [
-        "ÁöÁ¤ÇÑ ´ë»ó¿¡°Ô [damageCoefficient]ÀÇ ÇÇÇØ¸¦ ÀÔÈ÷°í",
-        "FORMAT(EVAL([stunDuration] / 20))ÃÊ°£ ±âÀı½ÃÅµ´Ï´Ù."
+        "ì§€ì •í•œ ëŒ€ìƒì—ê²Œ [damageCoefficient]ì˜ í”¼í•´ë¥¼ ì…íˆê³ ",
+        "FORMAT(EVAL([stunDuration] / 20))ì´ˆê°„ ê¸°ì ˆì‹œí‚µë‹ˆë‹¤."
       ]
     },
     "sacrifice": {
-      "displayName": "Èñ»ı",
+      "displayName": "í¬ìƒ",
       "type": "CAST",
       "iconId": 4531,
       "iconData": 123,
@@ -148,12 +148,12 @@
       "consumeHealthRate": 0.2,
       "manaRegen": 50,
       "description": [
-        "&cÇöÀç Ã¼·ÂÀÇ FORMAT([consumeHealthRate], #%)&r¸¦ ¼Ò¸ğÇÏ¿©",
-        "[../../manaName] 50&r¸¦ È¸º¹ÇÕ´Ï´Ù."
+        "&cí˜„ì¬ ì²´ë ¥ì˜ FORMAT([consumeHealthRate], #%)&rë¥¼ ì†Œëª¨í•˜ì—¬",
+        "[../../manaName] 50&rë¥¼ íšŒë³µí•©ë‹ˆë‹¤."
       ]
     },
     "starDust": {
-      "displayName": "º°ÀÇ Á¶°¢",
+      "displayName": "ë³„ì˜ ì¡°ê°",
       "type": "CAST",
       "iconId": 4531,
       "iconData": 175,
@@ -166,8 +166,8 @@
       "projectileTick": 16,
       "projectileRange": 24.0,
       "description": [
-        "º°ÀÇ Á¶°¢À» ¼ÒÈ¯ÇÏ¿© ÁöÁ¤ÇÑ ´ë»óÀÇ À§Ä¡·Î",
-        "¹ß»çÇÏ¿© ÀûÁßµÈ Àû¿¡°Ô [damageCoefficient]ÀÇ ÇÇÇØ¸¦ ÀÔÈü´Ï´Ù."
+        "ë³„ì˜ ì¡°ê°ì„ ì†Œí™˜í•˜ì—¬ ì§€ì •í•œ ëŒ€ìƒì˜ ìœ„ì¹˜ë¡œ",
+        "ë°œì‚¬í•˜ì—¬ ì ì¤‘ëœ ì ì—ê²Œ [damageCoefficient]ì˜ í”¼í•´ë¥¼ ì…í™ë‹ˆë‹¤."
       ]
     }
   }
