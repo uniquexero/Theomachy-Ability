@@ -106,11 +106,11 @@
       "type": "CAST",
       "levelRequirement": 90,
       "cost": 30,
-      "cooldown": 400,
+      "cooldown": 600,
       "castTime": 40,
       "castColor": 65535,
       "attackBonusCoefficient": "0.2ATK",
-      "cheeringDuration": 600,
+      "cheeringDuration": 500,
       "radius": 8,
       "projectileVelocity": 1.0,
       "description": [
