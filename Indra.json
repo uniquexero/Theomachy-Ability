@@ -21,7 +21,7 @@
       "iconData": 126,
       "cost": 10,
       "cooldown": 15,
-      "range": 5.0,
+      "range": 3.0,
       "damageCoefficient": "0.75ATK",
       "description": [
         "전방에 있는 적을 베어 0.75ATK의 피해를 입힙니다."
